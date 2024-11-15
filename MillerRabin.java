@@ -6,6 +6,19 @@ public class MillerRabin {
     private static final BigInteger THREE = new BigInteger("3");
 
     public String primality(BigInteger p, int s) {
+        
+        // Illegal input exceptions
+        if (p == null) {
+            throw new IllegalArgumentException("Input number p cannot be null");
+        }
+
+        if (p.compareTo(BigInteger.ZERO) <= 0) {
+            throw new IllegalArgumentException("Input number p must be greater than zero");
+        }
+
+        if (s <= 0) {
+            throw new IllegalArgumentException("Security parameter s must be greater than zero");
+        }
 
         // If p is 2 or 3, then it is likely prime
         if (p.equals(BigInteger.TWO) || p.equals(THREE)) {
