@@ -66,3 +66,12 @@ public class MillerRabin {
         return "p is likely prime";
     }
 }
+
+/*
+
+    BigInteger a;
+    do {
+        a = new BigInteger(p.bitLength(), random);
+    } while (a.compareTo(BigInteger.TWO) < 0 || a.compareTo(p.subtract(BigInteger.TWO)) > 0);
+
+ */
