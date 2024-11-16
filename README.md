@@ -25,4 +25,4 @@ Use each of the tests to generate two primes of the bit length 1024. Do not use 
 
 #### Conclusions
 
-Write down your conclusions from this process: how many operations, approximately, does it take to find a large prime?
+Please see [RESULTS.md](RESULTS.md)
